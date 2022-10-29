@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:weather_x/ui/load_screen.dart';
+import 'package:weather_x/ui/home_page.dart';
 import 'package:weather_x/utils/app_colors.dart';
 import 'package:weather_x/utils/app_images.dart';
 import 'package:weather_x/utils/clipped_shape.dart';
@@ -69,10 +69,10 @@ class _SplashScreen2State extends State<SplashScreen2> {
                   ),
                   CustomElevatedButton(
                     onPressed: () async {
-                      await Navigator.push(
+                      await Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const LoadingScreen(),
+                          builder: (context) => const HomePage(),
                         ),
                       );
                     },

@@ -9,8 +9,7 @@ class CustomElevatedButton extends StatelessWidget {
   final Color? backgroundColor;
   final Color? foregroundColor;
   final Color? color;
-  const
-  CustomElevatedButton({
+  const CustomElevatedButton({
     Key? key,
     this.onPressed,
     this.child,
